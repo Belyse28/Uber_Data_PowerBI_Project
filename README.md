@@ -1,11 +1,4 @@
-# 🚖 Uber Fares Dataset Analysis | INSY 8413 – Big Data Analytics
-
-**Course:** Introduction to Big Data Analytics – INSY 8413  
-**Instructor:** Eric Maniraguha | [eric.maniraguha@auca.ac.rw](mailto:eric.maniraguha@auca.ac.rw)  
-**Group:** A / B / E  
-**Dataset:** [Uber Fares Dataset – Kaggle](https://www.kaggle.com/datasets)  
-**Tool:** Power BI & Python  
-**Deadline:** Friday, 25 July 2025 (5:00 PM)
+# 🚖 Uber Fares Dataset Analysis 
 
 ---
 
