@@ -2,9 +2,17 @@
 
 ---
 
+
+#  Student Information
+ 
+**Name:** UMWALI Belyse  
+
+**ID:** 27229
+
 ## 📘 1. Project Overview
 
 This project analyzes historical Uber fare data to uncover trends in ride pricing, durations, peak times, and location patterns. It combines Python-based preprocessing with interactive Power BI visualizations to derive business insights that can support data-driven decision-making in urban transportation.
+
 
 ---
 
