@@ -11,14 +11,14 @@
 
 ---
 
-## 📘 1. Project Overview
+##   Project Overview
 
 This project analyzes historical Uber fare data to uncover trends in ride pricing, durations, peak times, and location patterns. It combines Python-based preprocessing with interactive Power BI visualizations to derive business insights that can support data-driven decision-making in urban transportation.
 
 
 ---
 
-## 🧪 2. Methodology
+##  Methodology
 
 ### a. Data Collection:
 - Source: Kaggle Uber Fares Dataset
@@ -39,7 +39,7 @@ This project analyzes historical Uber fare data to uncover trends in ride pricin
 
 ---
 
-## 📊 3. Exploratory Data Analysis (EDA)
+##  Exploratory Data Analysis (EDA)
 
 ### a. Descriptive Statistics:
 - **Average Fare:** $11.87  
@@ -60,7 +60,7 @@ This project analyzes historical Uber fare data to uncover trends in ride pricin
 
 ---
 
-## 🧠 4. Results
+##  Results
 
 - **Peak Ride Hours:** 7–9 AM & 5–8 PM
 - **Busiest Days:** Monday & Friday
@@ -70,7 +70,7 @@ This project analyzes historical Uber fare data to uncover trends in ride pricin
 
 ---
 
-## ✅ 5. Conclusion
+##  Conclusion
 
 The analysis revealed clear temporal and geographic trends:
 - Peak hours and days heavily influence pricing
@@ -79,7 +79,7 @@ The analysis revealed clear temporal and geographic trends:
 
 ---
 
-## 💡 6. Recommendations
+##  Recommendations
 
 - **Dynamic Pricing:** Adjust fares during high demand periods (Friday evenings, Monday mornings)
 - **Driver Allocation:** Target high-density pickup zones
