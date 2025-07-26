@@ -1,101 +1,87 @@
-# Uber_Data_PowerBI_Project
+# 🚖 Uber Fares Dataset Analysis | INSY 8413 – Big Data Analytics
 
-📘 1. Introduction
-This project aims to analyze Uber ride fare patterns using a dataset obtained from Kaggle. The goal is to uncover insights regarding fare distribution, ride timings, and peak activity periods. Using Python for preprocessing and Power BI for interactive visualization, this analysis supports data-driven decision-making in urban mobility and pricing strategies.
+**Course:** Introduction to Big Data Analytics – INSY 8413  
+**Instructor:** Eric Maniraguha | [eric.maniraguha@auca.ac.rw](mailto:eric.maniraguha@auca.ac.rw)  
+**Group:** A / B / E  
+**Dataset:** [Uber Fares Dataset – Kaggle](https://www.kaggle.com/datasets)  
+**Tool:** Power BI & Python  
+**Deadline:** Friday, 25 July 2025 (5:00 PM)
 
-🧪 2. Methodology
-a. Data Collection:
-Dataset: Uber Fares Dataset from Kaggle
+---
 
-Features included: fare amount, pickup and dropoff times/locations, and ride identifiers
+## 📘 1. Project Overview
 
-b. Data Preparation in Python:
-Loaded the dataset using pandas
+This project analyzes historical Uber fare data to uncover trends in ride pricing, durations, peak times, and location patterns. It combines Python-based preprocessing with interactive Power BI visualizations to derive business insights that can support data-driven decision-making in urban transportation.
 
-Conducted initial data profiling (shape, nulls, data types)
+---
 
-Cleaned missing values in fare_amount, pickup_datetime, and coordinates
+## 🧪 2. Methodology
 
-Engineered new features:
+### a. Data Collection:
+- Source: Kaggle Uber Fares Dataset
+- Key Features: `fare_amount`, `pickup_datetime`, `pickup_longitude`, `dropoff_latitude`, etc.
 
-hour, day, month from pickup_datetime
+### b. Data Preparation (Python):
+- Loaded dataset using **pandas**
+- Cleaned data: removed nulls, outliers, and incorrect coordinates
+- Converted timestamps to datetime format
+- Feature Engineering:
+  - Extracted `hour`, `day`, `month`, `day_name` from `pickup_datetime`
+  - Added `peak_hour` (boolean flag for busy hours)
+  - Created `ride_duration_minutes` from `dropoff - pickup`
 
-day_name (day of week)
+### c. Export for Power BI:
+- Saved enhanced dataset as `uber_enhanced.csv`
+- Imported it into **Power BI Desktop**
 
-peak_hour indicator (1 = peak time)
+---
 
-c. Export and Use in Power BI:
-Saved the cleaned dataset as uber_enhanced.csv
+## 📊 3. Exploratory Data Analysis (EDA)
 
-Imported into Power BI for visualization and dashboard development
+### a. Descriptive Statistics:
+- **Average Fare:** $11.87  
+- **Median Fare:** $8.50  
+- **Fare Range:** $1 to ~$500  
+- **Outliers:** Filtered for values above $100
 
-📊 3. Analysis
-a. Descriptive Statistics:
-Mean fare: ~$11.87
+### b. Visualizations in Power BI:
+- Histogram: Fare Distribution
+- Box Plot: Fare Amount (via Python Visual)
+- Line Chart: Average Fare vs. Hour of Day
+- Bar Chart: Rides by Day of Week
+- Time Series Chart: Monthly Trends
+- Map: Pickup Locations
+- Pie Chart: Peak vs Off-Peak Rides
+- Table: Ride Counts by Hour and Day
+- KPI: Average Fare and Total Rides
 
-Median fare: $8.50
+---
 
-Fare range: $1 – $500
+## 🧠 4. Results
 
-Majority of fares are under $50
+- **Peak Ride Hours:** 7–9 AM & 5–8 PM
+- **Busiest Days:** Monday & Friday
+- **High Fare Times:** 11 PM – 1 AM
+- **Fare Distribution:** Most rides < $30
+- **Spatial Insight:** Concentration around city centers
 
-Outliers detected: Extremely high fare values filtered for clarity
+---
 
-b. Key Visuals Created:
-Histogram of fare amounts
+## ✅ 5. Conclusion
 
-Line charts for:
+The analysis revealed clear temporal and geographic trends:
+- Peak hours and days heavily influence pricing
+- Urban hotspots dominate pickups
+- Time-of-day and seasonality create predictable fare patterns
 
-Fare amount vs hour of day
+---
 
-Fare amount by month
+## 💡 6. Recommendations
 
-Bar chart of day_name frequency by year
+- **Dynamic Pricing:** Adjust fares during high demand periods (Friday evenings, Monday mornings)
+- **Driver Allocation:** Target high-density pickup zones
+- **Fraud Detection:** Investigate fare outliers regularly
+- **Rider Incentives:** Offer discounts during slow hours (e.g., mid-afternoons)
+- **Data Integration:** Enrich dataset with weather, events, or traffic data
 
-Pie chart showing distribution between peak/off-peak rides
-
-Table of ride counts by day/hour
-
-Map showing spatial pickup density
-
-Fare bin analysis showing volume by fare ranges
-
-🧠 4. Results
-Busiest Ride Hours: Peak between 7–9 AM and 5–8 PM
-
-Most Common Ride Days: Mondays and Fridays
-
-High Fare Times: Late night rides (~11 PM – 1 AM) have slightly higher averages
-
-Fare Patterns:
-
-Most fares fall below $30
-
-Outliers above $100 likely represent airport or long-distance trips
-
-Geographic Insight: Pickup concentration mainly in urban centers (NYC assumed)
-
-✅ 5. Conclusion
-The Uber fare dataset reveals strong time-based patterns:
-
-Peak hours significantly impact ride volume and fare averages.
-
-Seasonal and daily variations show predictable trends.
-
-Spatial pickup patterns can guide future resource allocation (e.g., driver distribution).
-
-💡 6. Recommendations
-Dynamic Pricing Adjustments:
-Increase surge pricing sensitivity during peak hours (especially Friday evenings and Monday mornings).
-
-Driver Allocation Strategy:
-Prioritize urban centers with high pickup density during busy periods.
-
-Outlier Monitoring:
-Regularly review extremely high fares for fraud, errors, or pricing anomalies.
-
-Marketing Campaigns:
-Incentivize riders during low-demand periods (e.g., mid-afternoon weekdays).
-
-Further Data Enrichment:
-Combine with weather, traffic, and event data for improved forecasting and trend analysis.
+---
