@@ -57,7 +57,6 @@ This project analyzes historical Uber fare data to uncover trends in ride pricin
 - Time Series Chart: Monthly Trends
 - Map: Pickup Locations
 - Pie Chart: Peak vs Off-Peak Rides
-- Table: Ride Counts by Hour and Day
 - KPI: Average Fare and Total Rides
 
 ---
