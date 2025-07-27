@@ -124,6 +124,11 @@ This enhanced dataset was then imported into **Power BI Desktop** for visualizat
 | **KPI Card**    | Key metrics like Average Fare and Total Rides |
 | **Table**       | Ride counts grouped by day/hour               |
 
+
+### c. Dashboard Development Process
+
+![Dashboard](https://github.com/user-attachments/assets/fd3f5877-8765-42aa-bc79-27105b40f2fd)
+
 ---
 
 ##  Results & Insights
