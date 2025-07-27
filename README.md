@@ -1,9 +1,6 @@
 
----
-
 # 🚖 Uber Fares Dataset Analysis
 
----
 
 ## Student Information
 
