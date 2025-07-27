@@ -64,6 +64,23 @@ df['peak_hour'] = df['hour'].apply(lambda x: 1 if (7 <= x <= 9) or (17 <= x <= 2
 * Filtered unrealistic fares (e.g., over \$500 or less than \$1)
 * Dropped invalid latitude/longitude entries
 
+```python
+# Check again for missing values
+print("Missing values before cleaning:")
+print(df.isnull().sum())
+
+# Drop rows with missing values (you can also consider imputing if needed)
+df_cleaned = df.dropna()
+
+# Drop duplicates
+df_cleaned = df_cleaned.drop_duplicates()
+
+# Check the shape after cleaning
+print("\nAfter cleaning:")
+print("New shape:", df_cleaned.shape)
+print("Missing values:", df_cleaned.isnull().sum())
+```
+
 ### c. Ride Duration Feature (if dropoff available)
 
 ```python
